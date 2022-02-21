@@ -42,7 +42,7 @@ class Bookmark:
     def __eq__(self,other):
         if not isinstance(other, Bookmark):
             return False
-        return other.reference == self.reference
+        return other.url == self.url
         
 
 class Option:
