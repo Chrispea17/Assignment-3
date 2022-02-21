@@ -40,6 +40,9 @@ class Bookmark:
         self.date_added = date_added
 
     def __eq__(self,other):
+        if not isinstance(other, Bookmark):
+            return False
+        return other.reference == self.reference
         
 
 class Option:
